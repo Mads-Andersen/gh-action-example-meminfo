@@ -1,0 +1,6 @@
+name: "Memory container"
+description: "An action to output memory info"
+author: "Mads Andersen"
+runs:
+  using: "docker"
+  image: "Dockerfile"
