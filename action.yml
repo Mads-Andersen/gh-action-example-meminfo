@@ -1,6 +1,12 @@
 name: "Memory container"
 description: "An action to output memory info"
 author: "Mads Andersen"
+inputs:
+  message:
+    description: A message before printing the memory info
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.message }}
