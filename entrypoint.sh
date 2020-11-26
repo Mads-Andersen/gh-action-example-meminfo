@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 message="${1}" //from action.yml
 
