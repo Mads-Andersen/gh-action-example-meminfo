@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-message="${1}" //from action.yml
+message="${1}" #from action.yml
 
 memory=$(cat /proc/meminfo)
 echo "$message"
