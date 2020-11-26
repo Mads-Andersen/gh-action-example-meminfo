@@ -9,6 +9,8 @@ jobs:
       - name: run the action
         id: memoryinfo
         uses: ./
+        with:
+          message: Testing message
       - name: output
         run: |
           echo ${{ steps.memoryinfo.outputs.memory }}
